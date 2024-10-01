@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/header.module.css';
+import Image from 'next/image';
+import logoHubLar from '../public/images/HubLar-Logo.png';
 
 const Header = () => {
   return (
@@ -7,7 +9,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <Link href="/" className="navbar-brand">
-            <img src="/images/logo.png" alt="HubLar Logo" width="50" />
+            <Image src={logoHubLar} alt="HubLar" width={100} height={100} />
             HubLar
           </Link>
           <div className="collapse navbar-collapse">

@@ -1,0 +1,64 @@
+.aboutContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .aboutContent {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .aboutContent h1 {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+  }
+  
+  .aboutContent p {
+    font-size: 1.125rem;
+    color: var(--color-dark);
+    line-height: 1.8;
+  }
+  
+  .servicesSection {
+    background-color: var(--color-light);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .servicesSection h2 {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+  }
+  
+  .servicesSection ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .servicesSection li {
+    font-size: 1.25rem;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+  }
+  
+  .teamSection {
+    text-align: center;
+  }
+  
+  .teamSection h2 {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+  }
+  
+  .teamSection p {
+    font-size: 1.125rem;
+    color: var(--color-dark);
+    line-height: 1.8;
+  }
+  
