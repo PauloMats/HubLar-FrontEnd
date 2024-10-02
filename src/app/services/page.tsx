@@ -1,4 +1,5 @@
-import Header from '../components/Header';
+"use client";
+import Header from '../components/NavBar';
 import Footer from '../components/Footer';
 import CardService from '../components/CardService';
 

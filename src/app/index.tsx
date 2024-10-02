@@ -1,15 +1,12 @@
-"use client";
-import React from 'react';
-import CardService from '../app/components/CardService';
-import Footer from '../app/components/Footer';
-import NavBar from './components/NavBar';
-import HeroBanner from '../app/components/HeroBanner';
-
+import Header from './components/NavBar';
+import Footer from './components/Footer';
+import HeroBanner from './components/HeroBanner';
+import CardService from './components/CardService';
 
 export default function Home() {
   return (
     <div>
-      <NavBar />
+      <Header />
       <HeroBanner title={''} subtitle={''} backgroundImage={''} />
       <div className="container mt-5">
         <h2>Serviços que Oferecemos</h2>
