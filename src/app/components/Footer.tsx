@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-      <footer className="bg-light text-center text-lg-start">
+      <footer className="footer">
         <div className="container p-4">
           <p>&copy; 2024 HubLar - Todos os direitos reservados</p>
           <p>

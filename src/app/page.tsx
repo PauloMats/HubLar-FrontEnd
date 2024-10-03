@@ -3,15 +3,14 @@ import React from 'react';
 import CardService from '../app/components/CardService';
 import Footer from '../app/components/Footer';
 import NavBar from './components/NavBar';
-import HeroBanner from '../app/components/HeroBanner';
+
 
 
 export default function Home() {
   return (
     <div>
       <NavBar />
-      <HeroBanner title={''} subtitle={''} backgroundImage={''} />
-      <div className="container mt-5">
+      <div className="main-page-div">
         <h2>Serviços que Oferecemos</h2>
         <div className="row">
           <CardService title="Projeto Arquitetônico Popular" description="Descrição do serviço" imageUrl="" />

@@ -1,3 +1,5 @@
+// NavBar.tsx
+
 import Link from 'next/link';
 import styles from '../styles/header.module.css';
 import Image from 'next/image';
@@ -19,36 +21,34 @@ export default function NavBar() {
 
   return (
     <header className={styles.header}>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className={`${styles.navbar} navbar navbar-expand-lg`}>
         <div className="container-fluid">
           <Link href="/" className="navbar-brand">
-            <Image src={logoHubLar} alt="HubLar" width={100} height={100} />
-            HubLar
+            <Image src={logoHubLar} alt="HubLar" width={75} height={75} />
           </Link>
-          <div className={`collapse navbar-collapse ${menuOpen ? 'open' : ''}`}>
+          <button className={styles.hamburger} onClick={toggleMenu}>
+            ☰
+          </button>
+          
+          {/* Links que aparecem em telas grandes */}
+          <div className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>
             <ul className="navbar-nav ms-auto">
-            <li>
-              <Link href="/" className="nav-link" onClick={closeMenu}>Início</Link>
-            </li>
-            <li>
-              <Link href="/about" className="nav-link" onClick={closeMenu}>Sobre</Link>
-            </li>
-            <li>
-              <Link href="/contact" className="nav-link" onClick={closeMenu}>Mídia PIBTV</Link>
-            </li>
-            <li>
-              <Link href="/services" className="nav-link" onClick={closeMenu}>Sobre nós</Link>
-            </li>
+              <li>
+                <Link href="/" className="nav-link" onClick={closeMenu}>Início</Link>
+              </li>
+              <li>
+                <Link href="/about" className="nav-link" onClick={closeMenu}>Sobre</Link>
+              </li>
+              <li>
+                <Link href="/contact" className="nav-link" onClick={closeMenu}>Contato</Link>
+              </li>
+              <li>
+                <Link href="/services" className="nav-link" onClick={closeMenu}>Serviços</Link>
+              </li>
             </ul>
           </div>
-          <div className="menu">
-          <button onClick={toggleMenu}>☰</button>
-        </div>
         </div>
       </nav>
     </header>
   );
 };
-
-
-

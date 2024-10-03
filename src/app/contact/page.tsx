@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import NavBar from '../components/NavBar';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -10,6 +11,11 @@ const ContactForm = () => {
   };
 
   return (
+    <>    
+    <NavBar />
+
+    <div className='form-contact'>
+    <h1>Entre em contato</h1> <br />
     <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">Nome</label>
@@ -25,6 +31,8 @@ const ContactForm = () => {
       </div>
       <button type="submit" className="btn btn-primary">Enviar</button>
     </form>
+    </div>
+    </>
   );
 };
 

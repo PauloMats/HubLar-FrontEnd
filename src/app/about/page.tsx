@@ -1,8 +1,12 @@
+'use client';
 import React from 'react';
 import styles from '../styles/about.module.css';
+import NavBar from '../components/NavBar';
 
 const About: React.FC = () => {
   return (
+    <>
+    <NavBar />
     <div className={styles.aboutContainer}>
       <section className={styles.aboutContent}>
         <h1>Sobre a HubLar</h1>
@@ -34,6 +38,7 @@ const About: React.FC = () => {
         </p>
       </section>
     </div>
+    </>
   );
 };
 

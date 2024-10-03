@@ -1,14 +1,12 @@
-import Header from './components/NavBar';
 import Footer from './components/Footer';
-import HeroBanner from './components/HeroBanner';
 import CardService from './components/CardService';
+import NavBar from './components/NavBar';
 
 export default function Home() {
   return (
     <div>
-      <Header />
-      <HeroBanner title={''} subtitle={''} backgroundImage={''} />
-      <div className="container mt-5">
+      <NavBar />
+      <div className="container-main-page">
         <h2>Serviços que Oferecemos</h2>
         <div className="row">
           <CardService title="Projeto Arquitetônico Popular" description="Descrição do serviço" imageUrl="" />
